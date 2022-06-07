@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A19358E2674290B00DD2C45 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A19358D2674290B00DD2C45 /* LocationManager.swift */; };
+		5A1935942674346000DD2C45 /* GoogleMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1935932674346000DD2C45 /* GoogleMaps.swift */; };
+		5A1A72C02680FD3F00F13759 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5A1A72BF2680FD3F00F13759 /* SDWebImageSwiftUI */; };
+		5A3CFBD9267255D900226A15 /* BiometricFaceIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFBD8267255D900226A15 /* BiometricFaceIDManager.swift */; };
+		5A3F68FF265D939B0079C990 /* HomePage_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F68FE265D939B0079C990 /* HomePage_view.swift */; };
+		5A454D58265326D100C67361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A454D57265326D100C67361 /* AppDelegate.swift */; };
+		5A454D5A265326D100C67361 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A454D59265326D100C67361 /* SceneDelegate.swift */; };
+		5A454D5C265326D100C67361 /* LandingPage_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A454D5B265326D100C67361 /* LandingPage_view.swift */; };
+		5A454D61265326D200C67361 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A454D60265326D200C67361 /* Preview Assets.xcassets */; };
+		5A454D6C265327E500C67361 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A454D6B265327E500C67361 /* GoogleService-Info.plist */; };
+		5A61122C265E689E000F3F66 /* SessionSportsTab_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61122B265E689E000F3F66 /* SessionSportsTab_view.swift */; };
+		5A61122E265E6937000F3F66 /* sessionWeatherTab_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61122D265E6937000F3F66 /* sessionWeatherTab_view.swift */; };
+		5A611230265E69DA000F3F66 /* homeTab_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61122F265E69DA000F3F66 /* homeTab_view.swift */; };
+		5A611234265E7241000F3F66 /* cardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A611233265E7241000F3F66 /* cardModifier.swift */; };
+		5A611236265E9BD9000F3F66 /* sessionSportRecording_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A611235265E9BD9000F3F66 /* sessionSportRecording_view.swift */; };
+		5A611237265EA38A000F3F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A454D5D265326D200C67361 /* Assets.xcassets */; };
+		5A611243265FDDDB000F3F66 /* findTab_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A611242265FDDDB000F3F66 /* findTab_view.swift */; };
+		5A611249266171BC000F3F66 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A611248266171BC000F3F66 /* UserInfoManager.swift */; };
+		5A61124B2661B496000F3F66 /* User_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61124A2661B496000F3F66 /* User_viewModel.swift */; };
+		5A6112512661BC97000F3F66 /* Register_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6112502661BC97000F3F66 /* Register_view.swift */; };
+		5A6112532661BDBD000F3F66 /* ForgotPassword_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6112522661BDBD000F3F66 /* ForgotPassword_view.swift */; };
+		5A6112552667FB02000F3F66 /* FBFirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6112542667FB02000F3F66 /* FBFirestoreService.swift */; };
+		5A6112572667FB18000F3F66 /* FBFireStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6112562667FB18000F3F66 /* FBFireStoreError.swift */; };
+		5A6112592667FB26000F3F66 /* FBKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6112582667FB26000F3F66 /* FBKeys.swift */; };
+		5A61125B2667FB35000F3F66 /* FBUser_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61125A2667FB35000F3F66 /* FBUser_viewModel.swift */; };
+		5A61125D2667FB51000F3F66 /* FBAuth_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61125C2667FB51000F3F66 /* FBAuth_viewModel.swift */; };
+		5A61125F2667FB64000F3F66 /* FBAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A61125E2667FB64000F3F66 /* FBAuthError.swift */; };
+		5A6394A2265684960072D31A /* LogIn_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6394A1265684960072D31A /* LogIn_view.swift */; };
+		5A71439926887338004ABEF6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A71439826887338004ABEF6 /* SessionManager.swift */; };
+		5A839F7B26769D820046861C /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A839F7A26769D820046861C /* WeatherManager.swift */; };
+		5A839F7F2677E7560046861C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A839F7E2677E7560046861C /* WeatherService.swift */; };
+		5A8ADFBC268B331200EE383D /* SessionInfo_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8ADFBB268B331200EE383D /* SessionInfo_viewModel.swift */; };
+		5A8ADFBE268B6FE800EE383D /* FBSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8ADFBD268B6FE800EE383D /* FBSessionManager.swift */; };
+		5A92E2162685214100835144 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5A92E2152685214100835144 /* MobileNetV2.mlmodel */; };
+		5A92E218268529B600835144 /* ObjectDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A92E217268529B600835144 /* ObjectDetectionManager.swift */; };
+		5AB879472684AFF600537874 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB879462684AFF600537874 /* LoadingScreen.swift */; };
+		5AB879492684B03800537874 /* Weather_viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB879482684B03800537874 /* Weather_viewModel.swift */; };
+		5ABAD76E267CB1B100F81B06 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABAD76D267CB1B100F81B06 /* ARViewContainer.swift */; };
+		5AC6B80D2680E309005E9280 /* DismissKeyboard+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC6B80C2680E309005E9280 /* DismissKeyboard+Extentions.swift */; };
+		61C6BC75B473803E3E8C0108 /* Pods_AquaSports.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0578D6355E99C37E2EDFAD3 /* Pods_AquaSports.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AB14BD326933C330035134B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A454D4C265326D100C67361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A454D53265326D100C67361;
+			remoteInfo = AquaSports;
+		};
+		5AB14BE126933C5D0035134B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A454D4C265326D100C67361 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A454D53265326D100C67361;
+			remoteInfo = AquaSports;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A19358D2674290B00DD2C45 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5A1935932674346000DD2C45 /* GoogleMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMaps.swift; sourceTree = "<group>"; };
+		5A3CFBD8267255D900226A15 /* BiometricFaceIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricFaceIDManager.swift; sourceTree = "<group>"; };
+		5A3F68FE265D939B0079C990 /* HomePage_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage_view.swift; sourceTree = "<group>"; };
+		5A454D54265326D100C67361 /* AquaSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquaSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A454D57265326D100C67361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A454D59265326D100C67361 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A454D5B265326D100C67361 /* LandingPage_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage_view.swift; sourceTree = "<group>"; };
+		5A454D5D265326D200C67361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A454D60265326D200C67361 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A454D65265326D200C67361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A454D6B265327E500C67361 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A61122B265E689E000F3F66 /* SessionSportsTab_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSportsTab_view.swift; sourceTree = "<group>"; };
+		5A61122D265E6937000F3F66 /* sessionWeatherTab_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionWeatherTab_view.swift; sourceTree = "<group>"; };
+		5A61122F265E69DA000F3F66 /* homeTab_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTab_view.swift; sourceTree = "<group>"; };
+		5A611233265E7241000F3F66 /* cardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModifier.swift; sourceTree = "<group>"; };
+		5A611235265E9BD9000F3F66 /* sessionSportRecording_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionSportRecording_view.swift; sourceTree = "<group>"; };
+		5A611242265FDDDB000F3F66 /* findTab_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findTab_view.swift; sourceTree = "<group>"; };
+		5A611248266171BC000F3F66 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		5A61124A2661B496000F3F66 /* User_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User_viewModel.swift; sourceTree = "<group>"; };
+		5A6112502661BC97000F3F66 /* Register_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_view.swift; sourceTree = "<group>"; };
+		5A6112522661BDBD000F3F66 /* ForgotPassword_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword_view.swift; sourceTree = "<group>"; };
+		5A6112542667FB02000F3F66 /* FBFirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBFirestoreService.swift; sourceTree = "<group>"; };
+		5A6112562667FB18000F3F66 /* FBFireStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBFireStoreError.swift; sourceTree = "<group>"; };
+		5A6112582667FB26000F3F66 /* FBKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBKeys.swift; sourceTree = "<group>"; };
+		5A61125A2667FB35000F3F66 /* FBUser_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBUser_viewModel.swift; sourceTree = "<group>"; };
+		5A61125C2667FB51000F3F66 /* FBAuth_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuth_viewModel.swift; sourceTree = "<group>"; };
+		5A61125E2667FB64000F3F66 /* FBAuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthError.swift; sourceTree = "<group>"; };
+		5A6394A1265684960072D31A /* LogIn_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn_view.swift; sourceTree = "<group>"; };
+		5A71439826887338004ABEF6 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		5A839F7A26769D820046861C /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		5A839F7E2677E7560046861C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		5A8ADFBB268B331200EE383D /* SessionInfo_viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInfo_viewModel.swift; sourceTree = "<group>"; };
+		5A8ADFBD268B6FE800EE383D /* FBSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBSessionManager.swift; sourceTree = "<group>"; };
+		5A92E2152685214100835144 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		5A92E217268529B600835144 /* ObjectDetectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetectionManager.swift; sourceTree = "<group>"; };
+		5AB14BCE26933C330035134B /* AquaSportsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaSportsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB14BDC26933C5D0035134B /* AquaSportsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquaSportsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB879462684AFF600537874 /* LoadingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		5AB879482684B03800537874 /* Weather_viewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather_viewModel.swift; sourceTree = "<group>"; };
+		5ABAD76D267CB1B100F81B06 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		5AC6B80C2680E309005E9280 /* DismissKeyboard+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DismissKeyboard+Extentions.swift"; sourceTree = "<group>"; };
+		7C3549941DE9BDE3A4CB115B /* Pods-AquaSports.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AquaSports.release.xcconfig"; path = "Target Support Files/Pods-AquaSports/Pods-AquaSports.release.xcconfig"; sourceTree = "<group>"; };
+		88B6206987B6E6D4E14AD061 /* Pods-AquaSports.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AquaSports.debug.xcconfig"; path = "Target Support Files/Pods-AquaSports/Pods-AquaSports.debug.xcconfig"; sourceTree = "<group>"; };
+		E0578D6355E99C37E2EDFAD3 /* Pods_AquaSports.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AquaSports.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A454D51265326D100C67361 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A1A72C02680FD3F00F13759 /* SDWebImageSwiftUI in Frameworks */,
+				61C6BC75B473803E3E8C0108 /* Pods_AquaSports.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB14BCB26933C330035134B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB14BD926933C5D0035134B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D7615B2782997F2E30C31C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0578D6355E99C37E2EDFAD3 /* Pods_AquaSports.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A1935742674130500DD2C45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A611248266171BC000F3F66 /* UserInfoManager.swift */,
+				5A3CFBD8267255D900226A15 /* BiometricFaceIDManager.swift */,
+				5A71439826887338004ABEF6 /* SessionManager.swift */,
+				5A8ADFBD268B6FE800EE383D /* FBSessionManager.swift */,
+				5A19358D2674290B00DD2C45 /* LocationManager.swift */,
+				5A839F7A26769D820046861C /* WeatherManager.swift */,
+				5A92E217268529B600835144 /* ObjectDetectionManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A1935752674131A00DD2C45 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5A61124A2661B496000F3F66 /* User_viewModel.swift */,
+				5A61125A2667FB35000F3F66 /* FBUser_viewModel.swift */,
+				5A61125C2667FB51000F3F66 /* FBAuth_viewModel.swift */,
+				5A8ADFBB268B331200EE383D /* SessionInfo_viewModel.swift */,
+				5AB879482684B03800537874 /* Weather_viewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5A1935762674132700DD2C45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5A6112582667FB26000F3F66 /* FBKeys.swift */,
+				5A6112542667FB02000F3F66 /* FBFirestoreService.swift */,
+				5A839F7E2677E7560046861C /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A1935772674133400DD2C45 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				5A6112562667FB18000F3F66 /* FBFireStoreError.swift */,
+				5A61125E2667FB64000F3F66 /* FBAuthError.swift */,
+				5AC6B80C2680E309005E9280 /* DismissKeyboard+Extentions.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		5A454D4B265326D100C67361 = {
+			isa = PBXGroup;
+			children = (
+				5A454D56265326D100C67361 /* AquaSports */,
+				5A454D55265326D100C67361 /* Products */,
+				C4D8BE0F198F3E6715221597 /* Pods */,
+				0D7615B2782997F2E30C31C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A454D55265326D100C67361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A454D54265326D100C67361 /* AquaSports.app */,
+				5AB14BCE26933C330035134B /* AquaSportsUITests.xctest */,
+				5AB14BDC26933C5D0035134B /* AquaSportsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A454D56265326D100C67361 /* AquaSports */ = {
+			isa = PBXGroup;
+			children = (
+				5A1935772674133400DD2C45 /* Extention */,
+				5A1935762674132700DD2C45 /* Services */,
+				5A1935752674131A00DD2C45 /* ViewModel */,
+				5A1935742674130500DD2C45 /* Model */,
+				5A61124F2661BB8A000F3F66 /* Views */,
+				5A454D57265326D100C67361 /* AppDelegate.swift */,
+				5A454D59265326D100C67361 /* SceneDelegate.swift */,
+				5A92E2152685214100835144 /* MobileNetV2.mlmodel */,
+				5A454D5D265326D200C67361 /* Assets.xcassets */,
+				5A454D6B265327E500C67361 /* GoogleService-Info.plist */,
+				5A454D65265326D200C67361 /* Info.plist */,
+				5A454D5F265326D200C67361 /* Preview Content */,
+			);
+			path = AquaSports;
+			sourceTree = "<group>";
+		};
+		5A454D5F265326D200C67361 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A454D60265326D200C67361 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A61124F2661BB8A000F3F66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A6112602668FCC6000F3F66 /* components */,
+				5A454D5B265326D100C67361 /* LandingPage_view.swift */,
+				5A6394A1265684960072D31A /* LogIn_view.swift */,
+				5A6112502661BC97000F3F66 /* Register_view.swift */,
+				5A6112522661BDBD000F3F66 /* ForgotPassword_view.swift */,
+				5A3F68FE265D939B0079C990 /* HomePage_view.swift */,
+				5A61122B265E689E000F3F66 /* SessionSportsTab_view.swift */,
+				5A611235265E9BD9000F3F66 /* sessionSportRecording_view.swift */,
+				5A61122D265E6937000F3F66 /* sessionWeatherTab_view.swift */,
+				5A61122F265E69DA000F3F66 /* homeTab_view.swift */,
+				5A611242265FDDDB000F3F66 /* findTab_view.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A6112602668FCC6000F3F66 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5A611233265E7241000F3F66 /* cardModifier.swift */,
+				5ABAD76D267CB1B100F81B06 /* ARViewContainer.swift */,
+				5AB879462684AFF600537874 /* LoadingScreen.swift */,
+				5A1935932674346000DD2C45 /* GoogleMaps.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		C4D8BE0F198F3E6715221597 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88B6206987B6E6D4E14AD061 /* Pods-AquaSports.debug.xcconfig */,
+				7C3549941DE9BDE3A4CB115B /* Pods-AquaSports.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A454D53265326D100C67361 /* AquaSports */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A454D68265326D200C67361 /* Build configuration list for PBXNativeTarget "AquaSports" */;
+			buildPhases = (
+				FEBFF57FED24C1B82EF9F5AB /* [CP] Check Pods Manifest.lock */,
+				5A454D50265326D100C67361 /* Sources */,
+				5A454D51265326D100C67361 /* Frameworks */,
+				5A454D52265326D100C67361 /* Resources */,
+				C83CAF130F2564A475D787AD /* [CP] Embed Pods Frameworks */,
+				329687F1C20AC64B161D77B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaSports;
+			packageProductDependencies = (
+				5A1A72BF2680FD3F00F13759 /* SDWebImageSwiftUI */,
+			);
+			productName = AquaSports;
+			productReference = 5A454D54265326D100C67361 /* AquaSports.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AB14BCD26933C330035134B /* AquaSportsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB14BD526933C330035134B /* Build configuration list for PBXNativeTarget "AquaSportsUITests" */;
+			buildPhases = (
+				5AB14BCA26933C330035134B /* Sources */,
+				5AB14BCB26933C330035134B /* Frameworks */,
+				5AB14BCC26933C330035134B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AB14BD426933C330035134B /* PBXTargetDependency */,
+			);
+			name = AquaSportsUITests;
+			productName = AquaSportsUITests;
+			productReference = 5AB14BCE26933C330035134B /* AquaSportsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5AB14BDB26933C5D0035134B /* AquaSportsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AB14BE326933C5D0035134B /* Build configuration list for PBXNativeTarget "AquaSportsTests" */;
+			buildPhases = (
+				5AB14BD826933C5D0035134B /* Sources */,
+				5AB14BD926933C5D0035134B /* Frameworks */,
+				5AB14BDA26933C5D0035134B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AB14BE226933C5D0035134B /* PBXTargetDependency */,
+			);
+			name = AquaSportsTests;
+			productName = AquaSportsTests;
+			productReference = 5AB14BDC26933C5D0035134B /* AquaSportsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A454D4C265326D100C67361 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5A454D53265326D100C67361 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					5AB14BCD26933C330035134B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 5A454D53265326D100C67361;
+					};
+					5AB14BDB26933C5D0035134B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 5A454D53265326D100C67361;
+					};
+				};
+			};
+			buildConfigurationList = 5A454D4F265326D100C67361 /* Build configuration list for PBXProject "AquaSports" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A454D4B265326D100C67361;
+			packageReferences = (
+				5A1A72BE2680FD3F00F13759 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 5A454D55265326D100C67361 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A454D53265326D100C67361 /* AquaSports */,
+				5AB14BCD26933C330035134B /* AquaSportsUITests */,
+				5AB14BDB26933C5D0035134B /* AquaSportsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A454D52265326D100C67361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A454D6C265327E500C67361 /* GoogleService-Info.plist in Resources */,
+				5A611237265EA38A000F3F66 /* Assets.xcassets in Resources */,
+				5A454D61265326D200C67361 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB14BCC26933C330035134B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB14BDA26933C5D0035134B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		329687F1C20AC64B161D77B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AquaSports/Pods-AquaSports-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AquaSports/Pods-AquaSports-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AquaSports/Pods-AquaSports-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83CAF130F2564A475D787AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AquaSports/Pods-AquaSports-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AquaSports/Pods-AquaSports-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AquaSports/Pods-AquaSports-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEBFF57FED24C1B82EF9F5AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AquaSports-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A454D50265326D100C67361 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A454D58265326D100C67361 /* AppDelegate.swift in Sources */,
+				5ABAD76E267CB1B100F81B06 /* ARViewContainer.swift in Sources */,
+				5A611243265FDDDB000F3F66 /* findTab_view.swift in Sources */,
+				5A92E218268529B600835144 /* ObjectDetectionManager.swift in Sources */,
+				5A61125F2667FB64000F3F66 /* FBAuthError.swift in Sources */,
+				5A1935942674346000DD2C45 /* GoogleMaps.swift in Sources */,
+				5A6112532661BDBD000F3F66 /* ForgotPassword_view.swift in Sources */,
+				5A6112512661BC97000F3F66 /* Register_view.swift in Sources */,
+				5A6394A2265684960072D31A /* LogIn_view.swift in Sources */,
+				5A92E2162685214100835144 /* MobileNetV2.mlmodel in Sources */,
+				5A454D5A265326D100C67361 /* SceneDelegate.swift in Sources */,
+				5A61125B2667FB35000F3F66 /* FBUser_viewModel.swift in Sources */,
+				5A61122C265E689E000F3F66 /* SessionSportsTab_view.swift in Sources */,
+				5AB879472684AFF600537874 /* LoadingScreen.swift in Sources */,
+				5AB879492684B03800537874 /* Weather_viewModel.swift in Sources */,
+				5A611234265E7241000F3F66 /* cardModifier.swift in Sources */,
+				5A6112592667FB26000F3F66 /* FBKeys.swift in Sources */,
+				5AC6B80D2680E309005E9280 /* DismissKeyboard+Extentions.swift in Sources */,
+				5A61124B2661B496000F3F66 /* User_viewModel.swift in Sources */,
+				5A61125D2667FB51000F3F66 /* FBAuth_viewModel.swift in Sources */,
+				5A8ADFBE268B6FE800EE383D /* FBSessionManager.swift in Sources */,
+				5A454D5C265326D100C67361 /* LandingPage_view.swift in Sources */,
+				5A6112552667FB02000F3F66 /* FBFirestoreService.swift in Sources */,
+				5A3CFBD9267255D900226A15 /* BiometricFaceIDManager.swift in Sources */,
+				5A611236265E9BD9000F3F66 /* sessionSportRecording_view.swift in Sources */,
+				5A3F68FF265D939B0079C990 /* HomePage_view.swift in Sources */,
+				5A61122E265E6937000F3F66 /* sessionWeatherTab_view.swift in Sources */,
+				5A19358E2674290B00DD2C45 /* LocationManager.swift in Sources */,
+				5A8ADFBC268B331200EE383D /* SessionInfo_viewModel.swift in Sources */,
+				5A839F7F2677E7560046861C /* WeatherService.swift in Sources */,
+				5A839F7B26769D820046861C /* WeatherManager.swift in Sources */,
+				5A611249266171BC000F3F66 /* UserInfoManager.swift in Sources */,
+				5A6112572667FB18000F3F66 /* FBFireStoreError.swift in Sources */,
+				5A71439926887338004ABEF6 /* SessionManager.swift in Sources */,
+				5A611230265E69DA000F3F66 /* homeTab_view.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB14BCA26933C330035134B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB14BD826933C5D0035134B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AB14BD426933C330035134B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A454D53265326D100C67361 /* AquaSports */;
+			targetProxy = 5AB14BD326933C330035134B /* PBXContainerItemProxy */;
+		};
+		5AB14BE226933C5D0035134B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A454D53265326D100C67361 /* AquaSports */;
+			targetProxy = 5AB14BE126933C5D0035134B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5A454D66265326D200C67361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A454D67265326D200C67361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A454D69265326D200C67361 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B6206987B6E6D4E14AD061 /* Pods-AquaSports.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AquaSports/Preview Content\"";
+				DEVELOPMENT_TEAM = P7D3U9AXAJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AquaSports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CovUni.AquaSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A454D6A265326D200C67361 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3549941DE9BDE3A4CB115B /* Pods-AquaSports.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AquaSports/Preview Content\"";
+				DEVELOPMENT_TEAM = P7D3U9AXAJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AquaSports/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CovUni.AquaSports;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AB14BD626933C330035134B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7D3U9AXAJ;
+				INFOPLIST_FILE = AquaSportsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CovUni.AquaSportsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AquaSports;
+			};
+			name = Debug;
+		};
+		5AB14BD726933C330035134B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7D3U9AXAJ;
+				INFOPLIST_FILE = AquaSportsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CovUni.AquaSportsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AquaSports;
+			};
+			name = Release;
+		};
+		5AB14BE426933C5D0035134B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7D3U9AXAJ;
+				INFOPLIST_FILE = AquaSportsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CovUni.AquaSportsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaSports.app/AquaSports";
+			};
+			name = Debug;
+		};
+		5AB14BE526933C5D0035134B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7D3U9AXAJ;
+				INFOPLIST_FILE = AquaSportsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CovUni.AquaSportsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaSports.app/AquaSports";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A454D4F265326D100C67361 /* Build configuration list for PBXProject "AquaSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A454D66265326D200C67361 /* Debug */,
+				5A454D67265326D200C67361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A454D68265326D200C67361 /* Build configuration list for PBXNativeTarget "AquaSports" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A454D69265326D200C67361 /* Debug */,
+				5A454D6A265326D200C67361 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB14BD526933C330035134B /* Build configuration list for PBXNativeTarget "AquaSportsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB14BD626933C330035134B /* Debug */,
+				5AB14BD726933C330035134B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AB14BE326933C5D0035134B /* Build configuration list for PBXNativeTarget "AquaSportsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AB14BE426933C5D0035134B /* Debug */,
+				5AB14BE526933C5D0035134B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A1A72BE2680FD3F00F13759 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A1A72BF2680FD3F00F13759 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A1A72BE2680FD3F00F13759 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5A454D4C265326D100C67361 /* Project object */;
+}
